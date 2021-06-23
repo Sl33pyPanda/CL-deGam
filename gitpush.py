@@ -12,7 +12,7 @@ def git_push_server_address():
         origin = repo.remote(name="origin")
         pushinfo = origin.push()[0]
         if pushinfo:
-            log('Git log: ' + str(pushinfo.summary),func ='git-Push')
+            log('Git auto update log: ' + str(pushinfo.summary),func ='git-Push')
             return True
     except Exception as e:
         log('Unknown error: ' + str(e),func ='git-Push')

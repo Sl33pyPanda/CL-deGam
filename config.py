@@ -23,3 +23,11 @@ ngrok_local = 'http://127.0.0.1:4040'
 GIT_REPO = cur_dir + '\\.git'  # make sure .git folder is properly configured
 GIT_FILE = 'info.txt'
 GIT_COMMIT = 'Auto update srv address'
+
+
+#return code to client
+Response_code ={    '000':'Login failed',
+'001':'Login succes',
+'002':'Account already login',
+'003':'',
+'004':''}#share with srv
