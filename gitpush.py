@@ -6,7 +6,7 @@ def git_push_server_address():
     try:
         repo = Repo(GIT_REPO)
         # commit change
-        repo.git.add('info.txt')
+        repo.git.add(GIT_FILE)
         repo.index.commit(GIT_COMMIT)
         # push
         origin = repo.remote(name="origin")
