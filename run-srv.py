@@ -1,6 +1,7 @@
 from config import * #import setting
 
-from ngrok import *
-from git_push import git_push_server_address
+from ngrok import open_ngrok
 
 from utils.logger import *
+
+open_ngrok()

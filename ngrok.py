@@ -6,7 +6,7 @@ import subprocess
 import threading
 import os
 from requests_html import HTMLSession
-from git_push import git_push_server_address
+from gitpush import git_push_server_address
 
 def update_info(info):
     try:
