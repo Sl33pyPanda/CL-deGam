@@ -39,4 +39,5 @@ def close_ngrok(Popen_proc: subprocess.Popen):
     return True
 
 if __name__ == '__main__':    
-    close_ngrok(open_ngrok(port=8888))
+    p= open_ngrok(port=8888)
+    close_ngrok(p)
