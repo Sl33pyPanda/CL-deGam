@@ -17,6 +17,7 @@ def git_push_server_address():
     except Exception as e:
         log('Unknown error: ' + str(e),func ='git-Push')
         return False   
-
+'''
 if __name__ == '__main__': 
     git_push_server_address()
+'''
