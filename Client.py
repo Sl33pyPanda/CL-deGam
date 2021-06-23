@@ -57,7 +57,7 @@ try:
     if "001" in Response:
         com()
     elif "002" in Response:
-        print('Already logged in')
+        print('Already logged in')  
     else :
         print('exiting')
 except Exception as ex:
