@@ -10,7 +10,7 @@ from gitpush import git_push_server_address
 
 def update_info(info):
     try:
-        f = open(info_path, 'a')
+        f = open(info_path, 'w')
         f.write(info + "\n")
         f.close()
         git_push_server_address()
