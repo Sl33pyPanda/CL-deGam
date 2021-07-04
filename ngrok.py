@@ -1,12 +1,14 @@
 # FOR WINDOWS
 #   Sample use: open_ngrok('tcp', 4444)
 from config import * #import setting
+from utils.logger import log 
 
 import subprocess
 import threading
 import os
 from requests_html import HTMLSession
 from gitpush import git_push_server_address
+
 
 def update_info(info):
     try:

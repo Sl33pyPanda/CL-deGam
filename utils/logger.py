@@ -18,7 +18,14 @@ def write(result, mode = 'a'):
     for line in result:
         f.write(line + "\n")
     f.close()
+
 def log(event, func ,site = "", subFunc = ""):
     now = str(datetime.now()) + ' ' + site + ' at ' + str(func)  + str(subFunc) + ' '
+    lines = list(map(lambda x : now + x,list(str(event).split('\n'))))
+    write(lines)
+
+def printlg(event, func ,site = "", subFunc = ""):
+    now = str(datetime.now()) + ' ' + site + ' at ' + str(func)  + str(subFunc) + ' '
+    print(now,event)
     lines = list(map(lambda x : now + x,list(str(event).split('\n'))))
     write(lines)
